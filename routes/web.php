@@ -125,6 +125,7 @@ Route::middleware(['IsInstalled', 'auth', 'SetSessionData', 'language', 'timezon
     Route::get('/sells/quotations', 'SellController@getQuotations');
     Route::get('/sells/draft-dt', 'SellController@getDraftDatables');
     Route::resource('sells', 'SellController');
+    Route::resource('warranties', 'WarrantyController');
     Route::get('/sells/manage-warranty', 'SellController@manageWarranty');
     Route::get('/sells/due/r1', 'SellController@dueReport');
 

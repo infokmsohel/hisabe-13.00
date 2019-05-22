@@ -14,6 +14,13 @@ return [
     'days' => 'Days',
     'warranty_type' => 'Warranty Type',
     'warranty_period' => 'Warranty period',
+    'manage_warranty' => 'Manage Warranty',
+    'product_name' => 'Product Name',
+    'serial_id' => 'Serial Id',
+    'sale_date' => 'Sale Date',
+    'warranty_id' => 'Warranty Id',
+    'action' => 'Action',
+//    'serial_id' => 'Serial Id',
 
 
     

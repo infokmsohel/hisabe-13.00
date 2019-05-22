@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Warranty;
 use Illuminate\Http\Request;
 
 use App\TaxRate;
@@ -625,6 +626,48 @@ class SellController extends Controller
 
     public function manageWarranty(){
 
+        if (!auth()->user()->can('sell.view') && !auth()->user()->can('sell.create') && !auth()->user()->can('direct_sell.access')) {
+            abort(403, 'Unauthorized action.');
+        }
+        $business_id = session()->get('user.business_id');
+
+        if (request()->ajax()) {
+
+
+           $warranties=Warranty::where('business_id',$business_id)->get();
+
+
+
+            return DataTables::of($accounts)
+                ->addColumn(
+                    'action',
+                    '<button data-href="{{action(\'AccountController@edit\',[$id])}}" data-container=".account_model" class="btn btn-xs btn-primary btn-modal"><i class="glyphicon glyphicon-edit"></i> @lang("messages.edit")</button>
+                                <a href="{{action(\'AccountController@show\',[$id])}}" class="btn btn-warning btn-xs"><i class="fa fa-book"></i> @lang("account.account_book")</a>&nbsp;
+                                @if($is_closed == 0)
+                                <button data-href="{{action(\'AccountController@getFundTransfer\',[$id])}}" class="btn btn-xs btn-info btn-modal" data-container=".view_modal"><i class="fa fa-exchange"></i> @lang("account.fund_transfer")</button>
+
+                                <button data-href="{{action(\'AccountController@getDeposit\',[$id])}}" class="btn btn-xs btn-success btn-modal" data-container=".view_modal"><i class="fa fa-money"></i> @lang("account.deposit")</button>                                
+                                <a href="{{action(\'AccountController@getLedger\',[$id])}}" class="btn btn-xs btn-info">@lang("account.ledger")</a>
+                                @if($track_type != "own")
+                                <button data-url="{{action(\'AccountController@close\',[$id])}}" class="btn btn-xs btn-danger close_account"><i class="fa fa-close"></i> @lang("messages.close")</button>
+                                @endif
+                                @endif'
+                )
+                ->editColumn('name', function ($row) {
+                    if ($row->is_closed == 1) {
+                        return $row->name . ' <small class="label pull-right bg-red no-print">' . __("account.closed") . '</small><span class="print_section">(' . __("account.closed") . ')</span>';
+                    } else {
+                        return $row->name;
+                    }
+                })
+                ->editColumn('balance', function ($row) {
+                    return '<span class="display_currency" data-currency_symbol="true">' . $row->balance . '</span>';
+                })
+                ->removeColumn('id')
+                ->removeColumn('is_closed')
+                ->rawColumns(['action', 'balance', 'name'])
+                ->make(true);
+        }
 
         return view('sell.manage-warranty');
     }

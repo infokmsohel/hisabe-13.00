@@ -172,7 +172,7 @@
               @can('direct_sell.access')
                 <li class="{{ $request->segment(1) == 'sells' && $request->segment(2) == null ? 'active' : '' }}" ><a href="{{action('SellController@index')}}"><i class="fa fa-list"></i>@lang('lang_v1.all_sales')</a></li>
                     <li ><a href="{{action('SellController@dueReport')}}"><i class="fa fa-list"></i>{{__('account.customer_due_report')}}
-                    <li ><a href="{{action('SellController@manageWarranty')}}"><i class="fa fa-list"></i>{{__('account.manage_warranty')}}
+                    <li ><a href="{{action('WarrantyController@index')}}"><i class="fa fa-list"></i>{{__('account.manage_warranty')}}
                 @endcan
               <!-- Call superadmin module if defined -->
               @if(Module::has('Ecommerce'))
