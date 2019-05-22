@@ -1,0 +1,426 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jan 15, 2019, 11:11:40 AM
+    Author     : Sm Shahjalal Shaju
+*/
+
+
+/*************************************************************** Make Default Property **********************************/
+
+
+html {
+  font-size: 14px;
+}
+
+body,html {
+  height: 100%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #98a8b4;
+  background-color: #f2f3f8;
+}
+.sidebar-menu .treeview-menu > li > a{
+    font-size: 12px;
+}
+.color1 {
+    color:#1DC6BC !important;
+}
+.bg-color1{
+    background-color: #1DC6BC !important;
+}
+.color2{
+    color:#EE017C !important;
+}
+.bg-color2{
+    background-color: #EE017C !important;
+}
+.color3{
+    color:#FEBD22 !important;
+}
+.bg-yellow, .bg-color3{
+     background-color: #FEBD22 !important;
+}
+.margin-10{
+    margin: 10px;
+}
+.btn-primary{
+     background-color: #EE017C !important;
+}
+table thead tr th{
+    background: #09142f;
+    color:#fff;
+}
+.bg-light-green{
+    background: #60c400 !important;
+}
+.form-control{
+    height: 40px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    color:#999;
+}
+.form-control:focus{
+    border:1px solid #aaa;
+    color:#777;
+}
+/*********************************************** Page Loading *****************************************/
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 999999;
+}
+
+.canvas {
+  position: absolute;
+  margin: auto;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.loader-logo {
+  display: block;
+  width: 120px;
+  margin-bottom: 25px;
+}
+
+.spinner {
+  animation: spinner 1.5s linear infinite;
+  border: solid 5px transparent;
+  border-top: solid 6px #EE017C ;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/************************************************************** Animation **********************************/
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  animation-iteration-count: infinite;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.swing {
+  transform-origin: top center;
+  animation-name: swing;
+}
+
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bounce {
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
+span.badge-pulse {
+  background: #fe195e;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 rgba(254, 25, 94, 0.4);
+  animation: BadgePulse 1.8s infinite;
+  margin: -22px 0px 28px 10px;
+  
+}
+
+@-webkit-keyframes BadgePulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(254, 25, 94, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(254, 25, 94, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 20px rgba(254, 25, 94, 0);
+  }
+}
+
+@keyframes BadgePulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(254, 25, 94, 0.4);
+    box-shadow: 0 0 0 0 rgba(254, 25, 94, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(254, 25, 94, 0);
+    box-shadow: 0 0 0 10px rgba(254, 25, 94, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 20px rgba(254, 25, 94, 0);
+    box-shadow: 0 0 0 20px rgba(254, 25, 94, 0);
+  }
+}
+
+/**************************************************************  Reset Design ******************************************/
+
+.skin-blue .main-header li.user-header{
+    background: transparent;
+}
+.navbar-custom-menu > .navbar-nav > li > .dropdown-menu{
+    width: 230px;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer{
+    background: transparent;
+}
+div.pos-tab-menu div.list-group > a.active, div.pos-tab-menu div.list-group > a.active .glyphicon, div.pos-tab-menu div.list-group > a.active .fa {
+    background-color: #09142f;
+    color: #ffffff;
+    border-color: #09142f;
+}
+div.pos-tab-menu div.list-group > a.active::after{
+    border-left: 10px solid #09142f;
+}
+
+
+/*************************************************************** Menu Bar Design*****************************************/
+
+.skin-blue .main-header .navbar, .skin-blue .main-header .logo,.btn-info, .bg-aqua  {
+    background-color:#1DC6BC !important;
+}
+.skin-blue .main-header .logo:hover, .skin-blue .main-header .navbar .sidebar-toggle:hover, .btn-info:hover, .btn-info:active{
+    background: #EE017C !important;
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header{
+    height: 130px;
+}
+.dropdown-menu > li > a:hover,.navbar-nav > .user-menu > .dropdown-menu > .user-body a:hover{
+    background: transparent;
+    opacity: .8;
+    color: #EE017C !important;;
+}
+.skin-blue .main-sidebar, .skin-blue .left-side, .skin-blue .sidebar-menu > li > .treeview-menu{
+     background-color: #1DC6BC !important;
+     font-weight: bold;
+}
+.skin-blue .sidebar a, .skin-blue .sidebar-menu > li > .treeview-menu a{
+    color: #fff;
+    font-weight: bold;
+}
+.skin-blue .sidebar-menu > li > .treeview-menu a:hover{
+    color:#FEBD22 !important;
+}
+.skin-blue .sidebar-menu > li:hover > a, .skin-blue .sidebar-menu > li.active > a{
+    background:  #EE017C !important;
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer .user-logout{
+    margin-top:10px;
+    margin-bottom: 10px; 
+}
+.navbar-nav > .user-menu > .dropdown-menu > .user-footer .user-logout .btn-logout{
+    
+    padding: 15px;
+    border-radius:150px;
+    background-color: #1DC6BC;
+    color:#fff;
+}
+.user-footer .user-logout .btn-logout:hover{
+    color:#EE017C !important;
+}
+.remain-day{
+    color:#fff;
+    margin-top:13px;
+    margin-left:20px;
+}
+.remain-day a{
+    color:#EE017C;
+}
+.remain-day a:hover{
+    opacity: .8;
+}
+
+/************************************************************** Package Property ****************************************/
+
+.package-box{
+    margin:10px 0px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 20px 1px rgba(0,0,0,0.1);
+}
+.package-info{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: normal;
+    color: #5d5386;
+    font-size: 1rem;
+}
+.package-box:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.package-box .package-heading{
+    color:  #ED047D;
+    font-size: 1.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0;
+}
+.package-box .btn-pay,btn-hisabe{
+    background: #fff;
+    border:2px solid #ED047D;
+    color:#ED047D;
+    border:0px;
+    font-size: 1rem;
+    border-radius: 50px;
+    border:2px solid #ED047D;
+}
+.package-box .btn-pay:hover{    
+    background: #ED047D;
+    color:#fff;
+    box-shadow: 0 1px 15px 1px rgba(52,40,104,.15);
+    
+}
+.package-box .package-price{
+    font-weight: bold;
+    text-shadow: 2px 2px 0px #aaa;
+    font-size: 35px;
+}
+hr{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+.padding-20{
+    padding: 25px;
+}
+
+/************************************* User Profile ***********************************************/
+.user-profile{
+    background: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    min-height:380px;
+    border-radius:4px;
+    
+}
+.user-profile img{
+    text-align: center;
+    margin-bottom:20px;
+}
+
+/****************************************** Business Registration ******************************/
+
+.flex-row {
+  display: flex;
+}
+
+.flex-row>[class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row>[class*='col-'] > .widget {
+  background: #fff;
+  height: 100%;
+}
+
+.flex-row>[class*='col-'] > .widget-image {
+  height: 100%;
+}
+
+.flex-row.row:after,
+.flex-row.row:before {
+  display: flex;
+}
+.wizard > .steps > ul > li {
+    width: 30% !important;
+}
+.box-solid{
+   background: #eee; 
+}
+.reg-bg{
+    background: linear-gradient(135deg,rgba(66,39,90,.4) 0%,rgba(115,75,109,.95) 100%);
+}
+
+/*************************************** Package Part Info **************************************/
+.btn-renew a{
+    color:#fff;
+}
+.btn-renew a:hover{
+    color: #FEBD22 !important;
+    background: transparent !important;
+}

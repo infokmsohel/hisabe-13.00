@@ -1,0 +1,10 @@
+[2019-05-06 10:05:24] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\app\Http\Controllers\SellPosController.phpLine:1107Message:Trying to get property 'qty_available' of non-object  
+[2019-05-06 10:05:27] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\app\Http\Controllers\SellPosController.phpLine:1107Message:Trying to get property 'qty_available' of non-object  
+[2019-05-06 10:05:29] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\app\Http\Controllers\SellPosController.phpLine:1107Message:Trying to get property 'qty_available' of non-object  
+[2019-05-06 10:05:30] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\app\Http\Controllers\SellPosController.phpLine:1107Message:Trying to get property 'qty_available' of non-object  
+[2019-05-06 10:05:31] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\app\Http\Controllers\SellPosController.phpLine:1107Message:Trying to get property 'qty_available' of non-object  
+[2019-05-06 10:05:32] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\app\Http\Controllers\SellPosController.phpLine:1107Message:Trying to get property 'qty_available' of non-object  
+[2019-05-06 13:30:08] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\vendor\laravel\framework\src\Illuminate\Routing\Controller.phpLine:68Message:Method [Convert] does not exist on [App\Http\Controllers\SellPosController].  
+[2019-05-06 13:30:20] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\vendor\laravel\framework\src\Illuminate\Routing\Controller.phpLine:68Message:Method [Convert] does not exist on [App\Http\Controllers\SellPosController].  
+[2019-05-06 13:30:41] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\vendor\laravel\framework\src\Illuminate\Routing\Controller.phpLine:68Message:Method [Convert] does not exist on [App\Http\Controllers\SellPosController].  
+[2019-05-06 13:33:39] live.EMERGENCY: File:C:\xampp\htdocs\office\ultimatepos_update\vendor\laravel\framework\src\Illuminate\Routing\Controller.phpLine:68Message:Method [Convert] does not exist on [App\Http\Controllers\SellPosController].  

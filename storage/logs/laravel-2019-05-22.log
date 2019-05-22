@@ -1,0 +1,774 @@
+[2019-05-22 12:51:11] live.ERROR: Action App\Http\Controllers\SellController@manageWarranty not defined. (View: D:\xampp\htdocs\new\resources\views\layouts\partials\sidebar.blade.php) (View: D:\xampp\htdocs\new\resources\views\layouts\partials\sidebar.blade.php) (View: D:\xampp\htdocs\new\resources\views\layouts\partials\sidebar.blade.php) {"userId":1,"email":"shajushahjalal@gmail.com","exception":"[object] (ErrorException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338, ErrorException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338, ErrorException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338, InvalidArgumentException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\AccountConfirmation.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\AccountConfirmation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SessionLockMiddleware.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SessionLockMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Timezone.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Timezone->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Language.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Language->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SetSessionData.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SetSessionData->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\IsInstalled.php(23): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\IsInstalled->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#52 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#54 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\
+ew\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(58): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#71 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#72 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#73 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#74 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#75 D:\\xampp\\htdocs\
+ew\\public\\index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#76 {main}
+"} 
+[2019-05-22 12:51:37] live.ERROR: Action App\Http\Controllers\SellController@manageWarranty not defined. (View: D:\xampp\htdocs\new\resources\views\layouts\partials\sidebar.blade.php) (View: D:\xampp\htdocs\new\resources\views\layouts\partials\sidebar.blade.php) (View: D:\xampp\htdocs\new\resources\views\layouts\partials\sidebar.blade.php) {"userId":1,"email":"shajushahjalal@gmail.com","exception":"[object] (ErrorException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338, ErrorException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338, ErrorException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. (View: D:\\xampp\\htdocs\
+ew\esources\\views\\layouts\\partials\\sidebar.blade.php) at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338, InvalidArgumentException(code: 0): Action App\\Http\\Controllers\\SellController@manageWarranty not defined. at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:338)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(45): Illuminate\\View\\Engines\\CompilerEngine->handleViewException(Object(ErrorException), 1)
+#1 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(59): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('D:\\\\xampp\\\\htdocs...', Array)
+#2 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(137): Illuminate\\View\\Engines\\CompilerEngine->get('D:\\\\xampp\\\\htdocs...', Array)
+#3 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(120): Illuminate\\View\\View->getContents()
+#4 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(85): Illuminate\\View\\View->renderContents()
+#5 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(42): Illuminate\\View\\View->render()
+#6 D:\\xampp\\htdocs\
+ew\\vendor\\symfony\\http-foundation\\Response.php(206): Illuminate\\Http\\Response->setContent(Object(Illuminate\\View\\View))
+#7 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(724): Symfony\\Component\\HttpFoundation\\Response->__construct(Object(Illuminate\\View\\View))
+#8 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(698): Illuminate\\Routing\\Router::toResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#9 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Router->prepareResponse(Object(Illuminate\\Http\\Request), Object(Illuminate\\View\\View))
+#10 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\AccountConfirmation.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\AccountConfirmation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SessionLockMiddleware.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SessionLockMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Timezone.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Timezone->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Language.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Language->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SetSessionData.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SetSessionData->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\IsInstalled.php(23): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\IsInstalled->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#49 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#51 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#52 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#54 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#56 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\
+ew\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(58): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#71 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#72 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#73 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#74 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#75 D:\\xampp\\htdocs\
+ew\\public\\index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#76 {main}
+"} 
+[2019-05-22 13:04:11] live.ERROR: Trying to get property 'sell_lines' of non-object {"userId":1,"email":"shajushahjalal@gmail.com","exception":"[object] (ErrorException(code: 0): Trying to get property 'sell_lines' of non-object at D:\\xampp\\htdocs\
+ew\\app\\Http\\Controllers\\SellController.php:746)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew\\app\\Http\\Controllers\\SellController.php(746): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 746, Array)
+#1 [internal function]: App\\Http\\Controllers\\SellController->show('manage-warranty')
+#2 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#3 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('show', Array)
+#4 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SellController), 'show')
+#5 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#6 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
+#7 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\AccountConfirmation.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\AccountConfirmation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SessionLockMiddleware.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SessionLockMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Timezone.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Timezone->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Language.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Language->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SetSessionData.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SetSessionData->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\IsInstalled.php(23): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\IsInstalled->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#49 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#51 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(58): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#71 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#72 D:\\xampp\\htdocs\
+ew\\public\\index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#73 {main}
+"} 
+[2019-05-22 13:04:29] live.ERROR: Trying to get property 'sell_lines' of non-object {"userId":1,"email":"shajushahjalal@gmail.com","exception":"[object] (ErrorException(code: 0): Trying to get property 'sell_lines' of non-object at D:\\xampp\\htdocs\
+ew\\app\\Http\\Controllers\\SellController.php:746)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew\\app\\Http\\Controllers\\SellController.php(746): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Trying to get p...', 'D:\\\\xampp\\\\htdocs...', 746, Array)
+#1 [internal function]: App\\Http\\Controllers\\SellController->show('manage-warranty')
+#2 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#3 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('show', Array)
+#4 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\SellController), 'show')
+#5 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#6 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(658): Illuminate\\Routing\\Route->run()
+#7 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#8 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\AccountConfirmation.php(22): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\AccountConfirmation->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#10 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#11 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SessionLockMiddleware.php(25): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#12 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SessionLockMiddleware->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#13 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#14 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Timezone.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#15 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Timezone->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#16 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#17 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\Language.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#18 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\Language->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#19 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#20 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\SetSessionData.php(53): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#21 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\SetSessionData->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#22 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#23 D:\\xampp\\htdocs\
+ew\\app\\Http\\Middleware\\IsInstalled.php(23): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#24 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): App\\Http\\Middleware\\IsInstalled->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#25 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#26 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#27 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#28 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#29 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Auth\\Middleware\\Authenticate.php(43): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#30 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Auth\\Middleware\\Authenticate->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#31 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#32 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken.php(68): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#33 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\VerifyCsrfToken->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#34 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#35 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Middleware\\ShareErrorsFromSession.php(49): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#36 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\View\\Middleware\\ShareErrorsFromSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#37 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#38 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Session\\Middleware\\StartSession.php(63): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#39 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Session\\Middleware\\StartSession->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#40 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#41 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse.php(37): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#42 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\AddQueuedCookiesToResponse->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#43 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#44 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Cookie\\Middleware\\EncryptCookies.php(66): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#45 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Cookie\\Middleware\\EncryptCookies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#46 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#47 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#48 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(660): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#49 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(635): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#50 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(601): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#51 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(590): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#52 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#53 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#54 D:\\xampp\\htdocs\
+ew\\vendor\\barryvdh\\laravel-debugbar\\src\\Middleware\\InjectDebugbar.php(58): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#55 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Barryvdh\\Debugbar\\Middleware\\InjectDebugbar->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#56 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#57 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#58 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#59 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#60 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(30): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#61 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#62 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#63 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#64 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#65 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#66 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(46): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#67 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(149): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#68 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#69 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(102): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#70 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#71 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#72 D:\\xampp\\htdocs\
+ew\\public\\index.php(53): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#73 {main}
+"} 
+[2019-05-22 12:52:26] live.ERROR: SQLSTATE[HY000]: General error: 1005 Can't create table `hisabe_check`.`#sql-b08_a3` (errno: 150 "Foreign key constraint is incorrectly formed") (SQL: alter table `warranties` add constraint `warranties_product_id_foreign` foreign key (`product_id`) references `products` (`id`) on delete cascade) {"exception":"[object] (Illuminate\\Database\\QueryException(code: HY000): SQLSTATE[HY000]: General error: 1005 Can't create table `hisabe_check`.`#sql-b08_a3` (errno: 150 \"Foreign key constraint is incorrectly formed\") (SQL: alter table `warranties` add constraint `warranties_product_id_foreign` foreign key (`product_id`) references `products` (`id`) on delete cascade) at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:664, PDOException(code: HY000): SQLSTATE[HY000]: General error: 1005 Can't create table `hisabe_check`.`#sql-b08_a3` (errno: 150 \"Foreign key constraint is incorrectly formed\") at D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php:458)
+[stacktrace]
+#0 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('alter table `wa...', Array, Object(Closure))
+#1 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Connection.php(459): Illuminate\\Database\\Connection->run('alter table `wa...', Array, Object(Closure))
+#2 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Blueprint.php(86): Illuminate\\Database\\Connection->statement('alter table `wa...')
+#3 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(252): Illuminate\\Database\\Schema\\Blueprint->build(Object(Illuminate\\Database\\MySqlConnection), Object(Illuminate\\Database\\Schema\\Grammars\\MySqlGrammar))
+#4 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Schema\\Builder.php(165): Illuminate\\Database\\Schema\\Builder->build(Object(Illuminate\\Database\\Schema\\Blueprint))
+#5 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Facades\\Facade.php(221): Illuminate\\Database\\Schema\\Builder->create('warranties', Object(Closure))
+#6 D:\\xampp\\htdocs\
+ew\\database\\migrations\\2019_05_15_150538_create_warranties_table.php(27): Illuminate\\Support\\Facades\\Facade::__callStatic('create', Array)
+#7 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(359): CreateWarrantiesTable->up()
+#8 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(366): Illuminate\\Database\\Migrations\\Migrator->Illuminate\\Database\\Migrations\\{closure}()
+#9 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(177): Illuminate\\Database\\Migrations\\Migrator->runMigration(Object(CreateWarrantiesTable), 'up')
+#10 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(146): Illuminate\\Database\\Migrations\\Migrator->runUp('D:\\\\xampp\\\\htdocs...', 28, false)
+#11 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Migrations\\Migrator.php(95): Illuminate\\Database\\Migrations\\Migrator->runPending(Array, Array)
+#12 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Migrations\\MigrateCommand.php(69): Illuminate\\Database\\Migrations\\Migrator->run(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\MigrateCommand->handle()
+#14 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(549): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 D:\\xampp\\htdocs\
+ew\\vendor\\symfony\\console\\Command\\Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 D:\\xampp\\htdocs\
+ew\\vendor\\symfony\\console\\Application.php(946): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 D:\\xampp\\htdocs\
+ew\\vendor\\symfony\\console\\Application.php(248): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\MigrateCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 D:\\xampp\\htdocs\
+ew\\vendor\\symfony\\console\\Application.php(148): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(88): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 D:\\xampp\\htdocs\
+ew\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(121): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 D:\\xampp\\htdocs\
+ew\\artisan(35): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2019-05-22 13:46:01] live.EMERGENCY: File:D:\xampp\htdocs\new\vendor\laravel\framework\src\Illuminate\Database\Connection.phpLine:664Message:SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location_id' in 'field list' (SQL: insert into `warranties` (`product_id`, `location_id`, `business_id`, `sale_date`, `serial_id`, `warranty_period`, `warranty_type`, `updated_at`, `created_at`) values (6, 1, 1, 2019-05-22 13:46:01, 0000, 6, month, 2019-05-22 13:46:01, 2019-05-22 13:46:01))  
+[2019-05-22 13:46:44] live.EMERGENCY: File:D:\xampp\htdocs\new\vendor\laravel\framework\src\Illuminate\Database\Connection.phpLine:664Message:SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location_id' in 'field list' (SQL: insert into `warranties` (`product_id`, `location_id`, `business_id`, `sale_date`, `serial_id`, `warranty_period`, `warranty_type`, `updated_at`, `created_at`) values (6, 23, 1, 2019-05-22 13:46:44, 0000, 1, years, 2019-05-22 13:46:44, 2019-05-22 13:46:44))  
+[2019-05-22 13:47:24] live.EMERGENCY: File:D:\xampp\htdocs\new\vendor\laravel\framework\src\Illuminate\Database\Connection.phpLine:664Message:SQLSTATE[42S22]: Column not found: 1054 Unknown column 'location_id' in 'field list' (SQL: insert into `warranties` (`product_id`, `location_id`, `business_id`, `sale_date`, `serial_id`, `warranty_period`, `warranty_type`, `updated_at`, `created_at`) values (6, 23, 1, 2019-05-22 13:47:24, 0000, 1, years, 2019-05-22 13:47:24, 2019-05-22 13:47:24))  
+[2019-05-22 13:56:04] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1157Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 13:56:27] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1157Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 13:56:31] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1157Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 13:56:33] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1157Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 13:56:35] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1157Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 13:56:47] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1157Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:09:16] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1171Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:09:17] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1171Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:11:05] live.EMERGENCY: File:D:\xampp\htdocs\new\vendor\laravel\framework\src\Illuminate\Database\Connection.phpLine:664Message:SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'serial_id' cannot be null (SQL: insert into `warranties` (`product_id`, `location_id`, `business_id`, `sale_date`, `serial_id`, `warranty_period`, `warranty_type`, `updated_at`, `created_at`) values (8, 1, 1, 2019-05-22 14:11:05, , 6, years, 2019-05-22 14:11:05, 2019-05-22 14:11:05))  
+[2019-05-22 14:13:53] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:13:55] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:18:24] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:18:26] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:18:29] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:18:31] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:18:32] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:18:39] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:21:50] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:21:53] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:21:54] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:27:21] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 14:27:22] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:15:26] live.EMERGENCY: File:D:\xampp\htdocs\new\storage\framework\views\c3737fafc7996ca2978f2fbd76a7bc43de8c2242.phpLine:93Message:Undefined variable: warrantyType (View: D:\xampp\htdocs\new\resources\views\sale_pos\product_row.blade.php)  
+[2019-05-22 15:15:31] live.EMERGENCY: File:D:\xampp\htdocs\new\storage\framework\views\c3737fafc7996ca2978f2fbd76a7bc43de8c2242.phpLine:93Message:Undefined variable: warrantyType (View: D:\xampp\htdocs\new\resources\views\sale_pos\product_row.blade.php)  
+[2019-05-22 15:15:34] live.EMERGENCY: File:D:\xampp\htdocs\new\storage\framework\views\c3737fafc7996ca2978f2fbd76a7bc43de8c2242.phpLine:93Message:Undefined variable: warrantyType (View: D:\xampp\htdocs\new\resources\views\sale_pos\product_row.blade.php)  
+[2019-05-22 15:15:36] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:15:38] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:15:39] live.EMERGENCY: File:D:\xampp\htdocs\new\storage\framework\views\c3737fafc7996ca2978f2fbd76a7bc43de8c2242.phpLine:93Message:Undefined variable: warrantyType (View: D:\xampp\htdocs\new\resources\views\sale_pos\product_row.blade.php)  
+[2019-05-22 15:15:40] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:15:42] live.EMERGENCY: File:D:\xampp\htdocs\new\storage\framework\views\c3737fafc7996ca2978f2fbd76a7bc43de8c2242.phpLine:93Message:Undefined variable: warrantyType (View: D:\xampp\htdocs\new\resources\views\sale_pos\product_row.blade.php)  
+[2019-05-22 15:52:55] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:52:56] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:52:59] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:53:01] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:53:04] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:53:06] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:53:07] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:53:08] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:53:09] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:15] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:17] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:19] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:20] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:22] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:24] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:25] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 15:57:27] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:03:48] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:03:56] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:03:58] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:03:59] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:02] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:08] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:11] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:13] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:15] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:16] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:18] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:09:19] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:10:02] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:10:04] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:10:06] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:10:08] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:10:08] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:10:10] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1174Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:19:48] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:19:50] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1170Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 16:47:11] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:413Message:Invalid argument supplied for foreach()  
+[2019-05-22 16:47:19] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:413Message:Invalid argument supplied for foreach()  
+[2019-05-22 16:52:00] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:413Message:Invalid argument supplied for foreach()  
+[2019-05-22 17:28:32] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:29:43] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:29:49] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:29:53] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:29:58] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:30:01] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:30:02] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:30:03] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:30:18] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
+[2019-05-22 17:30:26] live.EMERGENCY: File:D:\xampp\htdocs\new\app\Http\Controllers\SellPosController.phpLine:1182Message:Trying to get property 'qty_available' of non-object  
