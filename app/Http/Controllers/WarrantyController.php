@@ -51,9 +51,66 @@ class WarrantyController extends Controller
 
                     return $warranties->warranty_period;
                 })
-                ->rawColumns(['sale_date', 'serial_id', 'product_name','warranty_type','warranty_period'])
+                ->addColumn(
+                    'action', '<button data-href="{{action(\'WarrantyController@edit\',[$id])}}" data-container=".account_model" class="btn btn-xs btn-primary btn-modal"><i class="glyphicon glyphicon-edit"></i> @lang("messages.edit")</button>'
+
+                )
+                ->rawColumns(['sale_date', 'serial_id', 'product_name','warranty_type','warranty_period','action'])
                 ->make(true);
         }
         return view('warranty.index');
+    }
+
+
+
+    public function edit($id)
+    {
+        if (!auth()->user()->can('sell.view') && !auth()->user()->can('sell.create') && !auth()->user()->can('direct_sell.access')) {
+            abort(403, 'Unauthorized action.');
+        }
+
+        if (request()->ajax()) {
+            $business_id = request()->session()->get('user.business_id');
+            $warranty = Warranty::where('business_id', $business_id)
+                ->find($id);
+
+            return view('warranty.edit',compact('warranty'));
+
+        }
+    }
+
+
+
+
+    public function update(Request $request, $id)
+    {
+        if (!auth()->user()->can('sell.view') && !auth()->user()->can('sell.create') && !auth()->user()->can('direct_sell.access')) {
+            abort(403, 'Unauthorized action.');
+        }
+
+        if (  request()->ajax()) {
+            try {
+                $input = $request->only(['warranty_type','warranty_period']);
+
+                $business_id = request()->session()->get('user.business_id');
+                $warranty = Warranty::where('business_id', $business_id)
+                    ->findOrFail($id);
+                $warranty->warranty_type = $input['warranty_type'];
+                $warranty->warranty_period = $input['warranty_period'];
+                $warranty->save();
+
+                $output = ['success' => true,
+                    'msg' => __("lang_v1.warranty_updated_success")
+                ];
+            } catch (\Exception $e) {
+                \Log::emergency("File:" . $e->getFile(). "Line:" . $e->getLine(). "Message:" . $e->getMessage());
+
+                $output = ['success' => false,
+                    'msg' => __("messages.something_went_wrong")
+                ];
+            }
+
+            return $output;
+        }
     }
 }

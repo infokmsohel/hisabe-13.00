@@ -48,8 +48,10 @@
 @section('javascript')
     <script src="{{ asset('plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js?v=' . $asset_v) }}"></script>
     <script>
+
+
         $(function(){
-                $('#warranty_table').DataTable({
+                warranty_form=$('#warranty_table').DataTable({
                     processing: true,
                     serverSide: true,
                     ajax: '{!! url()->current() !!}',
@@ -60,13 +62,36 @@
                         { data: 'product_name', name: 'product_name','orderable': false},
                         { data: 'warranty_type', name: 'warranty_type','orderable': false},
                         { data: 'warranty_period', name: 'warranty_period','orderable': false},
+                        { data: 'action', name: 'action','orderable': false},
                     ],
                     "lengthMenu": [[50, 100, 500,1000, -1], [50, 100, 500,1000, "All"]],
                 });
+
+            $(document).on('submit', 'form#edit_payment_account_form', function(e){
+                e.preventDefault();
+                var data = $(this).serialize();
+                $.ajax({
+                    method: "POST",
+                    url: $(this).attr("action"),
+                    dataType: "json",
+                    data: data,
+                    success:function(result){
+                        if(result.success == true){
+                            $('div.account_model').modal('hide');
+                            toastr.success(result.msg);
+                            warranty_form.ajax.reload();
+                        }else{
+                            toastr.error(result.msg);
+                        }
+                    }
+                });
+            });
             });
             function printN(id){
                 $('#'+id).printThis();
             }
 
+
     </script>
+
 @endsection

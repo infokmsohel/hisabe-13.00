@@ -20,6 +20,8 @@ return [
     'sale_date' => 'Sale Date',
     'warranty_id' => 'Warranty Id',
     'action' => 'Action',
+    'update_warranty' => 'Update Warranty',
+    'warranty_updated_success' => 'Warranty Updated Successfull',
 //    'serial_id' => 'Serial Id',
 
 
